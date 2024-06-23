@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Timer App</title>
+    <link rel="icon" type="image/jpg" href="tortillapp.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .timer-inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .timer-input {
+            margin-bottom: 10px;
+        }
+        .timer-controls {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+        }
+        button {
+            padding: 6px 12px;
+            font-size: 0.8em;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #FBBDCA;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="config" class="timer-inputs">
+        <h2>Enter Cooking Times</h2>
+        <div id="inputContainer">
+            <div class="timer-input">
+                <label>Time 1:</label>
+                <input value="00:00:30" type="text" placeholder="hh:mm:ss" class="time-input" required>
+            </div>
+        </div>
+        <button id="addTimer" class="timer-button">Add Timer</button>
+        <button id="startTimers" class="timer-button">Start Timers</button>
+    </div>
+
+    <div id="timerSets" style="display: none;">
+        <h3>Timers Set 1</h2>
+            <div class="timer-controls" id="timerControls1">
+            </div>
+        
+            <h3>Timers Set 2</h2>
+            <div class="timer-controls" id="timerControls2">
+            </div>
+        
+            <h3>Timers Set 3</h2>
+            <div class="timer-controls" id="timerControls3">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
