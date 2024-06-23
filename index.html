@@ -12,10 +12,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 100%;
             margin: 0;
             background-color: #f0f0f0;
+            overflow-y: scroll; /* Añadido para permitir scrolling vertical */
         }
+
         .timer-inputs {
             display: flex;
             flex-direction: column;
@@ -29,12 +31,12 @@
             display: none;
             flex-direction: column;
             align-items: center;
-            margin-top: 5px;
+            margin-top: 1px;
         }
         button {
             padding: 6px 12px;
             font-size: 0.8em;
-            margin: 10px;
+            margin: 1px 1px 10px 1px;
             border: none;
             border-radius: 8px;
             background-color: #FBBDCA;
@@ -42,6 +44,10 @@
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        h4 {
+            margin: 5px 0px 0px 0px;
         }
 
     </style>
@@ -60,19 +66,38 @@
     </div>
 
     <div id="timerSets" style="display: none;">
-        <h3>Timers Set 1</h2>
-            <div class="timer-controls" id="timerControls1">
-            </div>
+        <h4>Timers Set 1</h2>
+        <div class="timer-controls" id="timerControls1">
+        </div>
         
-            <h3>Timers Set 2</h2>
-            <div class="timer-controls" id="timerControls2">
-            </div>
+        <h4>Timers Set 2</h2>
+        <div class="timer-controls" id="timerControls2">
+        </div>
         
-            <h3>Timers Set 3</h2>
-            <div class="timer-controls" id="timerControls3">
+        <h4>Timers Set 3</h2>
+        <div class="timer-controls" id="timerControls3">
+        </div>
+
+        <h4>Timers Set 4</h2>
+        <div class="timer-controls" id="timerControls4">
+        </div>
+
+        <h4>Timers Set 5</h2>
+        <div class="timer-controls" id="timerControls5">
+        </div>
+
+        <h4>Timers Set 6</h2>
+        <div class="timer-controls" id="timerControls6">
+        </div>
+   
+        <h4>Timers Set 7</h2>
+        <div class="timer-controls" id="timerControls7">
+        </div>
+            
+        <h4>Timers Set 8</h2>
+        <div class="timer-controls" id="timerControls8">
         </div>
     </div>
-
 
     <script src="script.js"></script>
 </body>
