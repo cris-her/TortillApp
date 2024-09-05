@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearInterval(intervalId);
                 if (currentTimerIndices[setNumber] === timerSequences[setNumber].length - 1) {
                     button.textContent = 'Restart';
+                    button.style.backgroundColor = '#83D15C';
                     
                     var audio = new Audio(sounds[setNumber - 1]);
                     audio.play();
@@ -164,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 } else {
                     button.textContent = 'Next';
+                    button.style.backgroundColor = '#1483CC';
 
                     var audio = new Audio(sounds[setNumber - 1]);
                     audio.play();
